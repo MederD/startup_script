@@ -24,7 +24,7 @@ mkdir /opt/maven
 cd /opt/maven
 wget https://dlcdn.apache.org/maven/maven-3/3.8.2/binaries/apache-maven-3.8.2-bin.tar.gz
 tar -xvzf apache-maven-3.6.1-bin.tar.gz
-sed -i -e '$aM2_HOME=/opt/maven/apache-maven-3.6.1' ~/.bash_profile
-sed -i -e 'M2=\$M2_HOME/bin' ~/.bash_profile
+sed -i -e '$aM2_HOME=/opt/maven/apache-maven-3.8.2' ~/.bash_profile
+sed -i -e '$aM2=/opt/maven/apache-maven-3.8.2/bin' ~/.bash_profile
 sed -i '/PATH=/ s/$/:$M2_HOME:$M2/' ~/.bash_profile
 source ~./bash_profile
